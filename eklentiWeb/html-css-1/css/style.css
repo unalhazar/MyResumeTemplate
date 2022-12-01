@@ -1,0 +1,82 @@
+ /* General */
+ 
+  * { box-sizing: border-box;}
+  *::-webkit-scrollbar {width: 5px; background-color: #ededed;}  
+  *::-webkit-scrollbar-thumb {background-color: #000;}
+  html{scroll-behavior: smooth;} 
+  body {margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; font-size: 14px;}
+  img { display: block; height: auto; max-width: 100%;}
+  header, section, footer, aside, nav, main, article, figure {display: block;}
+  
+  button{border: none; color:#FFF; padding: 14px 28px; font-size: 16px; cursor:pointer; background-color: #54C4CB; border-radius: 3px;}
+  button:hover{background-color: #54C3EE;}
+  label{font-size: 20px;}
+  input, textarea{width: 100%; padding: 12px 20px; margin: 8px 0px; box-sizing: border-box; border:none; border-radius: 5px;}
+  input[type=submit]{background-color: #2196F3; color:#FFF; cursor: pointer; font-size: 18px;}
+
+
+  /* navbar*/
+
+  nav{position: fixed; width: 100%;}
+  nav .container{max-width: 1200px; margin: auto; margin-top: 8px;}
+  nav .logo a{font-size: 22px; color:#FFF; max-width: 250px; margin: auto;}
+  nav .menu{float: right;}
+  .topnav{background-color: #000; overflow: hidden; border-bottom: 1.5px solid #54C3EE; text-transform: uppercase;}
+  .topnav a {display: block; float: left; color: #999; padding: 14px 18px; text-decoration: none; font-size: 17px;}
+  .topnav a:active, .topnav a:hover {color:#FFF;}
+  .topnav .icon {float: right; display: none; margin-right: 20px;}
+
+  /* Header */
+
+  header{height: 80vh; padding: 100px 30px 30px 30px; text-align: center; background: #000 url("../img/header.jpg") no-repeat center center; background-size: cover; color: #FFF; font-size: 25px;}
+  header h2 span{color:#54c4cb;}
+  header p{font-size: 18px;}
+
+   /* Contant */
+
+ section{margin: 100px 0; padding: 100px;}
+ section p {line-height: 28px; text-align: justify;}
+
+ .row:after{content: ""; display: table; clear: both;}
+
+ .col-66{float: left; width: 66.666666%; padding: 20px;}
+ .col-33{float: left; width: 33.333333%; padding: 20px;}
+ .firstTitle{font-size: 60px; font-weight: bold;}
+ .secondTitle{font-size: 40px; font-weight: bold; color:#54c4cb;}
+ .thirdTitle{font-size: 24px;}
+
+
+ /* Footer*/
+
+ footer{background: #54C3EE url("../img/map.png") no-repeat center center; background-size: contain;}
+ footer section{width: 65%; margin: auto;}
+ footer p{width: 100%; margin: 0px; background-color: #323544; color:#999; text-align: center; line-height: 70px;}
+ footer a{color: #54C4CB; text-decoration: none;}
+
+ @media screen and (max-width:1000px) {
+   /*navbar*/
+
+   .topnav .menu a{display: none;}
+   .topnav .menu {float: none;}
+   .topnav a.icon {display: block;}
+   .topnav.responsive .icon {position: absolute; right: 0px; top: 8px; z-index: 999;}
+   .topnav.responsive a{float: none; display: block; text-align: center;}
+   .topnav.responsive .logo{max-width: 250px; margin:auto;}
+
+   /* content */
+
+   section{margin: 0px; padding: 10px;}
+   .col-66, .col-33 {width: 100%; text-align: center;}
+   .firstTitle{font-size: 60px; font-weight: bold;}
+   .secondTitle{font-size: 40px; font-weight: bold; color:#54c4cb;}
+   .thirdTitle{font-size: 24px;}
+   img{margin: auto;}
+
+   /*footer*/
+
+   footer section{width: 90%;}
+   
+ }
+
+
+

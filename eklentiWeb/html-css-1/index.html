@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Responsive Web Project with Html5 and Css3</title>
+  <!-- Css --> 
+  <link rel="stylesheet" type="text/css" href="css/style.css"> 
+  
+</head>
+<body>
+  
+  <!-- Navbar -->
+  <nav class="topnav responsive" id="topnavId">
+   <div class="container">
+       <div class="logo">
+        <a href="index.html">Logo</a>
+      </div>
+      <div class="menu">
+        <a href="#header" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#whyUs">Why Us</a>
+        <a href="#contact">Contact</a>
+        <a href="javascript:void(0)" class="icon" onclick="responsiveMenu()">&#9776;</a>     
+
+      </div>
+    </div>   
+  </nav>
+  <!-- Header -->
+  <header id="header">
+    <h2>Hoşgeldiniz <span>Website</span></h2>
+    <p>Biz en iyisiyiz</p>
+  </header>
+
+ 
+  <main>
+     <!-- About Us -->
+    <section id="about">
+      <div class="row">
+        <div class="col-66">
+          <h1 class="firstTitle">Hakkımda</h1>
+          <h2 class="secondTitle">Best of</h2>
+          <p><span class="thirdTitle"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus nesciunt, odio illum reiciendis odit atque blanditiis laboriosam quae consequuntur rerum, ipsa vitae tempora ratione, labore dolorem alias voluptatum sint asperiores?</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quis eaque inventore voluptates officiis esse asperiores sed repudiandae modi? Nobis quae aliquid provident exercitationem vero asperiores, ipsa quam distinctio ad?</p>
+          <button>Read More</button>
+
+        </div>
+        <div class="col-33">
+          <img src="img/about.jpg" alt="about us">
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Clarity(Berraklık) -->
+    <section style="background-color: #000; color:#FFF">
+      <div class="row">
+        <div class="col-33">
+          <img src="img/clarity.jpg" alt="about us">
+        </div>
+        <div class="col-66">
+          <h1 class="firstTitle">No way</h1>
+          <h2 class="secondTitle">Pixels, who?</h2>
+          <p><span class="thirdTitle"> Veniam quis eaque inventore voluptates officis.</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quis eaque inventore voluptates officiis esse asperiores sed repudiandae modi? Nobis quae aliquid provident exercitationem vero asperiores, ipsa quam distinctio ad?</p>
+          <button>Read More</button>
+
+        </div>
+        
+      </div>
+    </section>
+
+
+    <!-- Why Us -->
+    <section id="whyUs">
+      <div class="row">
+        <div class="col-66">
+          <h1 class="firstTitle">Neden Biz</h1>
+          <h2 class="secondTitle">En iyisiyiz</h2>
+          <p><span class="thirdTitle"> Veniam quis eaque inventore voluptates officis.</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quis eaque inventore voluptates officiis esse asperiores sed repudiandae modi? Nobis quae aliquid provident exercitationem vero asperiores, ipsa quam distinctio ad?</p>
+          <button>Read More</button>
+
+        </div>
+        <div class="col-33">
+          <img src="img/about.jpg" alt="about us">
+        </div>
+      </div>
+    </section>
+
+
+
+
+  </main>
+
+  <!--Footer-->
+  <footer>
+    <section id="contact">
+      <h1 class="firstTitle" style="text-align: center;">Contact Form</h1>
+      <form>
+        <label>Name</label>
+        <input type="text" name="" required placeholder="Name">
+        <label>E-mail</label>
+        <input type="email" name="" required placeholder="E-mail">
+        <textarea rows="8"></textarea>
+        <input type="submit" name="" value="Submit">
+      </form>
+    </section>
+    <p>&copy; Copyright 2022 <a href="https://www.w3schools.com/" target="_blank">W3schools.com</a> </p>
+  </footer>
+
+  <script type="text/javascript">
+    function responsiveMenu(){
+      var x = document.getElementById("topnavId");
+      if (x.className === "topnav"){
+        x.className = x.className + " responsive";
+      }
+      else{
+        x.className = "topnav";
+      }
+    }
+  </script>
+
+
+
+
+ 
+
+
+</body>
+</html>

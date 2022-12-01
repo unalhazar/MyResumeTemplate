@@ -1,0 +1,217 @@
+/******************** General  ***********************/
+
+* {box-sizing: border-box;margin: 0;padding: 0;}
+*::-webkit-scrollbar {width: 8px;background-color: #eee;} 
+*::-webkit-scrollbar-track {background-color: #ccc;} 
+*::-webkit-scrollbar-thumb {background-color: var(--color);border-radius: 5px;}
+
+:root { 
+    --color: #5c9ef5; /* f67c92  5c9ef5 */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: sans-serif;
+}
+h1{font-size: 24px;}
+p{font-size: 15px; line-height: 25px; color:#777; text-align: justify;}
+a{text-decoration: none; color:#777;}
+img{
+    max-width: 100%;
+    height: auto; 
+}
+li{list-style-type: none;}
+form{
+    max-width: 100%;
+    margin: 30px 0;   
+}
+input{
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    outline: none;
+    border: 2px solid var(--color);
+    box-shadow: none;
+    border-radius: 5px;
+}
+hr{
+    width: 100%;
+    border: 0;
+    border-top: 1px solid var(--color);
+}
+
+/******************** General class ******************/
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+.text-left{
+    text-align:left;
+}
+.text-right{
+    text-align: right;
+}
+.circle{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 15px 0;
+    background-color: var(--color);
+    border-radius: 50%;
+}
+.line{
+    line-height: 8px;
+
+}
+.line-1, .line-2, .line-3{
+    display: inline-block;
+    background-color: var(--color);   
+
+}
+.line-1{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+.line-2{
+    width: 80px;
+    height: 1px;  
+
+
+}
+.line-3{
+    width: 60px;
+    height: 1px;  
+
+}
+.btn{
+    padding: 15px 35px;
+    outline: none;
+    border: 2px solid var(--color);
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition:all 1s;
+}
+.btn:hover{
+    background-color: var(--color);
+}
+
+/********************  Hader *************************/
+
+#header{
+    height: 80vh;
+    background:url("/eklentiWeb/singlepage/img/background.png") center right/contain no-repeat;
+}
+.logo{
+    width: 200px;
+    margin-top: 30px;
+}
+.header-content{
+    max-width: 400px;
+    margin-top: 150px;
+}
+.read-more{
+    margin: 20px 0 30px 0;
+
+}
+
+#sideNav{
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    right: -250px;
+    top: 0;
+    background-color: var(--color);
+    z-index: 1;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+#sideNav ul li{
+    margin: 30px;
+}
+#sideNav ul li:first-child{
+    margin-top: 45px;
+}
+#sideNav ul li a{
+    color: #fff;
+}
+#menuBtn{
+    background-color: var(--color);
+    width: 50px;
+    position: fixed;
+    right: 40px;
+    top: 35px;
+    border-radius: 5px;
+    z-index: 1;
+    cursor: pointer;
+
+}
+
+
+/******************** About Us and Offer *************/
+#aboutUs{
+    padding: 70px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+.about-left, .about-right{
+    flex-basis: 50%;
+}
+.about-left img{
+    border-radius: 50px;
+}
+
+.about-content{
+    max-width: 400px;
+    display: inline-block;
+}
+.about-content h2{
+    font-size: 18px;
+    margin: 50px 0 10px;
+    font-style: italic;
+}
+.about-content h3{
+    font-size: 20px;
+    color:#757575;
+    font-style: italic;
+}
+
+/******************** Features ***********************/
+ 
+/******************** Courses - Contact **************/
+
+/******************** Contact ************************/
+
+/******************** Footer *************************/
+
+/******************** Social Icons *******************/
+
+
+/******************** Responsive *********************/
+
+@media only screen and (max-width: 700px) {
+
+/******************** General  **********************/
+
+/******************** Header ************************/
+
+/******************** About Us  *********************/
+ 
+/********* features, course, contact and footer ****************/
+
+/******************** Social Icons ******************/  
+
+}
+
+
+
+

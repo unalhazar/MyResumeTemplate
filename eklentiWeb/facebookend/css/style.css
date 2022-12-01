@@ -1,0 +1,96 @@
+.body {
+	background-image: url('/eklentiWeb/facebookend/img/bg.jpg'); 
+	background-repeat: repeat-x; 
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 19px;
+	line-height: 15px;	
+}
+	a {
+		color: #0e385f;	
+	}
+	small{
+		font-size: 12px;
+	}
+	select{
+		width: 60px;
+		height: 30px;
+		font-size: 13px;
+	}
+
+.container{
+	max-width: 1050px;
+}
+
+	.inputGiris{
+		width: 145px;
+		height: 22px;
+		font-size: 12px;
+	}
+	.btnGiris{
+		color:#fff;
+		width: 80px;
+		height: 23px;
+		border: 1px solid #555555;		
+		padding: 0 3px;
+		font-size: 12px;
+		font-weight: bolder;
+	}
+
+	.aciklama1{
+		color:#0e385f;
+		font-size: 20px;
+		font-weight: bold;
+		line-height: 29px;
+		margin-top: 40px;
+		width: 450px;
+		word-spacing: -1px;
+	}
+	.btnKaydol{
+		background-color: #5f9B4C;
+		font-size: 19px;
+		width: 195px;
+		height: 40px;
+		border: 1px solid #777;
+		border-radius: 5px;
+		text-align: center;
+		margin-top: 5px;
+	}
+	footer{
+		margin-top: 130px;
+	}
+	.btn{
+		width: 50px;
+		height:fit-content
+	}
+	footer a{
+		color:#365899
+	}
+
+
+/* Responsive */
+
+@media (max-width:990px) {
+	.aciklama1{
+		text-align: center;
+		font-size: 14px;
+		width: auto;
+	}
+	.aciklama2{
+		font-size: 13px;
+	}
+	h1{
+		font-size: 25px;
+	}	
+}
+
+@media (max-width:575px) {
+
+	select{
+		width: 100%;
+		height: 40px;
+		border-width:1px;
+		border-color:#e9e9e9;
+		border-radius: 5px;
+	}
+}
+

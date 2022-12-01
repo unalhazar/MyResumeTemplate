@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+*{
+    font-size: 16px;
+    line-height:30px;
+    box-sizing: border-box;
+    text-align: center;
+    list-style: none;
+}
+h1,h4{
+  color: cadetblue;
+}
+h3, h6{
+    color:burlywood;
+}
+
+header{
+  background:url(/img/pixabay.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: 50% 0;
+  position: relative;
+  background-attachment: fixed;
+}
+.overlay{
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.text span{
+  display:inline-block;
+  color:#DEB887;
+  text-transform:uppercase;
+  font-family:oswald;
+  font-weight:900;
+  font-size:48px;
+  animation:bounce 1.5s ease-in-out infinite;
+  animation-delay: var(--delay);
+  position: relative;
+  top: 400px;  
+  
+}
+@media screen and (max-width: 768px) {
+  .text span{
+    font-size: 32px;
+  }
+}
+
+.text span:not(:last-child){
+  margin-right:-2px;
+}
+
+@keyframes bounce{
+  0%{
+    transform:translateY(0);
+  }
+  
+  50%{
+    transform:translateY(-20px);
+  }
+  
+  100%{
+    transform:translateY(0);
+  }
+}
+
+body{ 
+    background-image: url(/img/herom.jpg);
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    font-family: 'Montserrat', sans-serif;
+    place-items: center;  
+}
+
+/* Svg link */
+.svg-link {
+  color: #DDDDDD;
+  font-family: helvetica;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 150px;
+  height: 40px;
+  display:grid;
+  place-items: center;
+  position: relative;
+}
+
+.svg-link svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.outline {
+  width: 100%;
+  height: 100%;
+  stroke-width: 4px;
+  stroke: #DEB887;
+  fill: transparent;
+  stroke-dasharray: 59 235;
+  stroke-dashoffset: -235;
+  transition: all 0.9s;
+}
+
+.svg-link:hover {
+  color: #DEB887;
+}
+
+.svg-link:hover .outline {
+  stroke-width: 2px;
+  stroke-dashoffset: 0;
+  stroke-dasharray: 379;
+}
+
+section .container-fluid .row .card {
+  background-color: #eee;
+}
+
+main{
+  padding: 0;
+  margin: 0;
+}
+
+section{
+    color:#DDDDDD;
+    margin-top: 25px;
+    margin-bottom: 55px;    
+  }
+
+.container{
+    border-width: 2px;
+    border-style: solid;
+    border-color: #2A2C39;
+  }
+
+
+/*Hakkımda*/
+
+main section .container-fluid .row .profilimİmg{
+    height: 250px;    
+    width: auto;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #ccc;    
+  }
+/*navbar*/
+
+nav{
+        
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-transform: uppercase;
+    height: auto;
+    width: auto;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #272829;
+}
+
+
+.navLogo{
+    margin-left: 50px;
+    color: #DDDDDD;
+}
+nav .container-fluid #navbarNav ul li a:hover{
+    color:#DDDDDD;
+}
+
+/*section*/
+
+.section .row .profilDiv .profilim{
+    padding: 50px;      
+}
+section div .profil{
+    width: 250px;
+    height: 250px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #DDDDDD;
+    margin-bottom: 50px;
+}
+
+section .container-fluid .row div .duzceİmg{
+    border-width: 2px;
+    border-style: solid;
+    border-color: #DDDDDD;
+    width: 300px;
+    height: 250px;
+    margin-bottom: 20px;
+}
+section .container-fluid .row div .duzceİmg2{
+    width: 300px;
+    height: 250px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #DDDDDD;    
+}
+
+section .container-fluid .row .card {
+    color:#050D18;
+}
+
+/*--------------------------------------------------------------
+  # My Resume
+  --------------------------------------------------------------*/
+  .resume .resume-title {
+    font-size: 19px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: cadetblue;
+  }
+  .resume .resume-item h6 a{   
+    color: #eee;
+    font-weight: 700;
+  }
+  .resume .resume-item .slide1 .baslik{
+    cursor: pointer;
+    margin-bottom: 8px;
+  }
+  .resume .resume-item .slide1 .icerik{
+    display: none;
+  }
+  .resume .resume-item .slide1 .icerik a{
+    text-decoration: none;
+  }
+  .resume .resume-item .slide2 .icerik1 a{
+    text-decoration: none;
+  }
+  .resume .resume-item .slide2 .icerik1{
+    display: none;
+  }
+  .resume .resume-item .slide1 .baslik:hover{
+    color: #DEB887;
+  }
+  .resume .resume-item .slide2 .baslik1:hover{
+    color: #DEB887;
+  }
+  .resume .resume-item .slide2 .baslik1{
+    cursor: pointer;
+    margin-bottom: 8px;
+  }
+
+  .resume .resume-item {
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 3px solid cadetblue;
+    position: relative;
+  }
+  .resume .resume-item h4 {
+    line-height: 18px;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: cadetblue;
+    margin-bottom: 10px;
+  }
+  .resume .resume-item h5 {
+    font-size: 17px;
+    color:burlywood;;
+    padding: 5px 15px;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .resume .resume-item ul {
+    padding-left: 20px;
+  }
+  .resume .resume-item ul li {
+    padding-bottom: 8px;
+  }
+  .resume .resume-item:last-child {
+    padding-bottom: 0;
+  }
+  .resume .resume-item::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;    
+    left: -9px;
+    top: 0;
+    background-color: burlywood;
+    border-width: 0.1rem;
+    border-style: solid;
+    border-radius: 50%;
+    border-color: cadetblue;
+  }
+  /*--------------------------------------------------------------
+  # Sections General
+  --------------------------------------------------------------*/
+  
+  .section-title {
+    text-align: center;
+    padding: 30px 0;
+    position: relative;
+  }
+  .section-title h2 {
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 0;
+    letter-spacing: 1px;
+    color: #DDDDDD;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .section-title p {
+    margin-bottom: 0;
+    position: relative;
+    z-index: 2;
+  }  
+
+  /* İcon Bar*/
+  
+  .icon-bar a {
+    display: inline-block;
+    text-align: center;
+    transition: all 0.3s ease;
+    color:  #DDDDDD;
+    margin-left: 3px;
+    width: 25px;
+  } 
+
+  .facebook {
+    background: #3b434a;    
+    color: #DDDDDD;
+  }
+  
+  .twitter {
+    background: #3b434a;
+    color: #DDDDDD;
+  }
+  
+  .google {
+    background: #3b434a;
+    color: #DDDDDD;
+  }
+  
+  .linkedin {
+    background: #3b434a;
+    color: #DDDDDD;
+  }
+  
+  .youtube {
+    background: #3b434a;
+    color: #DDDDDD;
+  }
+
+  .bolum1, .bolum2, .bolum3, .bolum4, .bolum5, #resume, footer{
+    opacity: 0;
+  }
+  
+  
+  /*typed*/
+
+  .container-1 {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-1 p {
+    font-size: 2.5rem;
+    padding: 0.5rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    color: #ccc;
+    overflow: hidden;
+}
+
+.container-1 p span.typed-text {
+    font-weight: normal;
+    font-size: 2.4rem;
+    color: #DEB887;
+    margin-left: 8px;
+}
+
+.container-1 p span.cursor {
+    display: inline-block;
+    background-color: #ccc;
+    margin-left: 0.1rem;
+    width: 3px;
+    animation: blink 1s infinite;
+}
+
+.container-1 p span.cursor.typing {
+    animation: none;
+}
+
+@keyframes blink {
+    0% {
+        background-color: #ccc;
+    }
+    49% {
+        background-color: #ccc;
+    }
+    50% {
+        background-color: transparent;
+    }
+    99% {
+        background-color: transparent;
+    }
+    100% {
+        background-color: #ccc;
+    }
+}
